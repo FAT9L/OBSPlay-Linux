@@ -18,3 +18,8 @@ My only modifications alter the filepath that this scrips checks for, in order t
 Assuming that your `/path/to/OBS/save/location` is something like `$HOME/Videos/OBS`, with a scene named `example1`, a directory would be created under `/path/to/OBS/save/location/example1/`, with a file named `example1 [OBS-file-formatting].extension`.
 
 The full file path would be something like `$HOME/Videos/OBS/example1/example1 2022-11-16 15-05-20.mkv`.
+
+
+**Installation:**
+
+Save to your plugins directory, which is most likely `/usr/share/obs/obs-plugins/frontend-tools/scripts`.
