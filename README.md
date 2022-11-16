@@ -1,4 +1,4 @@
-# OBSPLay-Linux
+# OBSPlay-Linux
 Linux-compatible fork/port of [OBSPlay](https://obsproject.com/forum/resources/obsplay-nvidia-shadowplay-alternative.1326/) by Kwozy.
 
 
