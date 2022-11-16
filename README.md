@@ -18,5 +18,5 @@ The full file path would be something like `$HOME/Videos/OBS/example1/example1 2
 
 - `git clone` this repo (or your preferred method)
 - Extract `OBSPlay-Linux.lua`
-- Save to your plugins directory, which is most likely `/usr/share/obs/obs-plugins/frontend-tools/scripts`
+- Save to your plugins directory, most likely `/usr/share/obs/obs-plugins/frontend-tools/scripts`
 - Test as needed
