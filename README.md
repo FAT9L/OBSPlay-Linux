@@ -13,7 +13,7 @@ My only modifications were some basic comments, as well as altering the filepath
 - This setup for Linux distros assumes that your /path/to/OBS/save/location is something like $HOME/Videos/OBS.
 - If so, the function should work properly, and may be configured as needed.
 
-**Example output logic:**
+**Example output logic with scene prefix and scene folder:**
 
 For a scene named "example1", a directory would be created under */path/to/OBS/save/location*/example1/, with a file named "example1 [OBS-file-formatting].extension".
 The full file path would be something like "$HOME/Videos/OBS/example1/example1 2022-11-16 15-05-20.mkv".
