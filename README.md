@@ -10,8 +10,8 @@ My only modifications were some basic comments, as well as altering the filepath
 **File formatting:**
 
 - Filepath structure may be changed as needed.
-- This setup for Linux distros assumes that your /path/to/OBS/save/location is something like $HOME/Videos/OBS
-- If so, the function should work properly.
+- This setup for Linux distros assumes that your /path/to/OBS/save/location is something like $HOME/Videos/OBS.
+- If so, the function should work properly, and may be configured as needed.
 
 **Example output logic:**
 
