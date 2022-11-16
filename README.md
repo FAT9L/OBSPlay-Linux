@@ -4,7 +4,7 @@ Linux-compatible fork/port of [OBSPlay](https://obsproject.com/forum/resources/o
 
 Provides similar functionality to the naming scheme of Nvidia ShadowPlay. This automatically saves any files created by the built-in replay buffer under the name of their scene, followed by any optional conventions you've set in OBS. It also enables the creation of new folders (also named after the scene) for easier file sorting.
 
-My modifications alter the filepath that this scrips checks for, in order to comply with standard Linux directory structure.
+My modifications alter the filepath that this script checks for, in order to comply with standard Linux directory structure.
 
 
 #### **Example output logic with scene prefix and scene folder:**
