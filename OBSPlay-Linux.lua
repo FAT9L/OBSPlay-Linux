@@ -1,4 +1,5 @@
 -- Version 1.0.1
+-- Edited for Linux filesystem support by FAT9L
 
 o = obslua
 
@@ -12,19 +13,20 @@ If you have 'Scene Based Folder' it will move the replay file to 'BaseSavePath/S
 Enable both to have it change the Prefix and move the recording to the 'Scene Based Folder'.
 IMPORTANT: Leave Your Replay Buffer Prefix empty if you are using Scene Based Prefix.
 
-Author: Kwozy	
-Edited for Linux filesystem support by FAT9L]]
+Author: Kwozy]]
+
 end
 
 function script_load()
 
+	o.obs_frontend_add_event_callback(obs_frontend_callback)
 
-    o.obs_frontend_add_event_callback(obs_frontend_callback)
 end
 
 function script_unload()
    
 end
+
 
 -- Function separates replay path from its name
 -- Example: $HOME/Videos/Replay File Name -> Replay File Name 
@@ -35,6 +37,7 @@ function get_replay_name(path)
 
 end
 
+
 -- Function To Retrive The Latest Replay
 function get_last_replay()
     replay_buffer = o.obs_frontend_get_replay_buffer_output()
@@ -43,7 +46,6 @@ function get_last_replay()
     o.proc_handler_call(ph, "get_last_replay", cd)
     path = o.calldata_string(cd, "path")
     o.calldata_destroy(cd)
-
     o.obs_output_release(replay_buffer)
     return path
 end
@@ -54,6 +56,7 @@ function get_current_scene_name()
 	o.obs_source_release(current_scene)
 	return name
 end 
+
 -- Function Called By OBS
 function obs_frontend_callback(event, private_data)
 	if event == o.OBS_FRONTEND_EVENT_REPLAY_BUFFER_SAVED then	
@@ -61,8 +64,8 @@ function obs_frontend_callback(event, private_data)
     end
 end
 
--- The Main Program
 
+-- The Main Program
 
 -- Filepath structure may be changed as needed.
 -- This setup for Linux distros assumes that your /path/to/OBS/save/location is something like $HOME/Videos/OBS
