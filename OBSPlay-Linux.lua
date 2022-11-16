@@ -12,8 +12,7 @@ If you have 'Scene Based Folder' it will move the replay file to 'BaseSavePath/S
 Enable both to have it change the Prefix and move the recording to the 'Scene Based Folder'.
 IMPORTANT: Leave Your Replay Buffer Prefix empty if you are using Scene Based Prefix.
 
-Author: Kwozy
-	
+Author: Kwozy	
 Edited for Linux filesystem support by FAT9L]]
 end
 
@@ -27,11 +26,9 @@ function script_unload()
    
 end
 
--- Function To Separate the Replay Path From Its Name
--- For Example, $HOME/Videos/Replay File Name   Becomes Replay File Name 
--- May Only Work On Windows, Has Not Been Tested On Other OS
-
---(Confirmed to work on Debian 12 Unstable - FAT9L)
+-- Function separates replay path from its name
+-- Example: $HOME/Videos/Replay File Name -> Replay File Name 
+-- Confirmed to work on Debian 12 Unstable
 function get_replay_name(path)
 
    return path:match( "([^/]+)$" )
@@ -65,6 +62,17 @@ function obs_frontend_callback(event, private_data)
 end
 
 -- The Main Program
+
+
+-- Filepath structure may be changed as needed.
+-- This setup for Linux distros assumes that your /path/to/OBS/save/location is something like $HOME/Videos/OBS
+-- If so, the function should work properly.
+
+-- Example output:
+-- For a scene named "scene1", a directory would be created under $HOME/Videos/OBS/scene1,
+-- with a file named "scene1 YYYY-MM-DD HH-MM-SS.extension".
+-- The full file path would be something like "$HOME/Videos/OBS/scene1/scene1 2022-11-16 15-05-20.mkv".
+
 function OBSPlay()
 		last_Replay = get_last_replay()
 		current_scene_name = get_current_scene_name()
@@ -73,7 +81,7 @@ function OBSPlay()
 	if last_Replay ~= nil then
 		last_Replay_Name = get_replay_name(last_Replay)
 			if sceneBasedName == true and sceneBasedFolder == true then
-
+				
 				if o.os_file_exists(absBasePath .. '/' .. current_scene_name) == true then 	
 				o.os_rename(last_Replay, absBasePath .. '/' .. current_scene_name .. '/'.. current_scene_name .. " " .. last_Replay_Name) 
 				else
