@@ -7,7 +7,7 @@ Kwozy wrote a wonderful little OBS plugin (available [on the OBS forums](https:/
 My modifications alter the filepath that this scrips checks for, in order to comply with standard Linux directory structure.
 
 
-## **Example output logic with scene prefix and scene folder:**
+#### **Example output logic with scene prefix and scene folder:**
 
 Assuming that your `/path/to/OBS/save/location` is something like `$HOME/Videos/OBS`, with a scene named `example1`, a directory would be created under `/path/to/OBS/save/location/example1/`, with a file named `example1 [OBS-file-formatting].extension`.
 
