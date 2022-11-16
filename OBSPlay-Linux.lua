@@ -1,4 +1,4 @@
--- Version 1.0.1
+-- Version 1.0.0
 -- Edited for Linux filesystem support by FAT9L
 
 o = obslua
