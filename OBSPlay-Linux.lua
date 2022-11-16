@@ -31,7 +31,9 @@ If you have 'Scene Based Folder' it will move the replay file to 'BaseSavePath/S
 Enable both to have it change the Prefix and move the recording to the 'Scene Based Folder'.
 IMPORTANT: Leave Your Replay Buffer Prefix empty if you are using Scene Based Prefix.
 
-Author: Kwozy]]
+Original author: Kwozy
+Ported to Linux by FAT9L]]
+	
 
 end
 
