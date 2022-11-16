@@ -59,8 +59,8 @@ end
 
 -- Function Called By OBS
 function obs_frontend_callback(event, private_data)
-	if event == o.OBS_FRONTEND_EVENT_REPLAY_BUFFER_SAVED then	
-		OBSPlay()
+	if event == o.OBS_FRONTEND_EVENT_REPLAY_BUFFER_SAVED then 
+        OBSPlay()
     end
 end
 
