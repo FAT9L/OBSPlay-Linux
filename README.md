@@ -15,5 +15,5 @@ My only modifications were some basic comments, as well as altering the filepath
 
 **Example output logic:**
 
-For a scene named "example1", a directory would be created under */path/to/OBS/save/location*/example1/, with a file named "example1 YYYY-MM-DD HH-MM-SS.extension".
+For a scene named "example1", a directory would be created under */path/to/OBS/save/location*/example1/, with a file named "example1 [OBS-file-formatting].extension".
 The full file path would be something like "$HOME/Videos/OBS/example1/example1 2022-11-16 15-05-20.mkv".
