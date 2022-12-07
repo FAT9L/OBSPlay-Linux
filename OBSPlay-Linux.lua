@@ -1,4 +1,4 @@
--- OBSPlay-Linux: Shadow play functionality for *nix systems
+-- OBSPlay-Linux: ShadowPlay functionality for *nix systems
 -- Copyright (C) 2022 by FAT9L 
 
     -- This program is free software: you can redistribute it and/or modify
@@ -26,8 +26,8 @@ sceneBasedName = false
 sceneBasedFolder = false
 
 function script_description()
-	return [[OBSPlay, like Nvidia Shadowplay but for OBS! If you have Scene Based Prefix Enabled it will move the replay file to the 'Base Save Path' and rename the file to have a prefix of the scene name. 
-If you have 'Scene Based Folder' it will move the replay file to 'BaseSavePath/SceneName' and will not change the prefix. 
+	return [[OBSPlay, like Nvidia ShadowPlay but for OBS! If you have Scene Based Prefix enabled, it will move the replay file to the 'Base Save Path' and rename the file to have a prefix of the scene name. 
+If you have 'Scene Based Folder', it will move the replay file to 'BaseSavePath/SceneName' and will not change the prefix. 
 Enable both to have it change the Prefix and move the recording to the 'Scene Based Folder'.
 IMPORTANT: Leave Your Replay Buffer Prefix empty if you are using Scene Based Prefix.
 
@@ -50,7 +50,7 @@ end
 
 -- Function separates replay path from its name
 -- Example: $HOME/Videos/Replay File Name -> Replay File Name 
--- Confirmed to work on Debian 12 Unstable
+-- Confirmed to work on Arch, Debian 12 Sid
 function get_replay_name(path)
 
    return path:match( "([^/]+)$" )
