@@ -28,6 +28,8 @@ This is set up to trigger with `Macro trigger hotkey 1`, which I've bound to F10
 
 As a warning, this does inherently lose about 8 seconds during the window in which the buffer contents are being saved, and while the buffer restarts. This is unavoidable. However, the benefits most likely outweigh the cost if you find yourself frequently having to skip through redundant footage later on.
 
+Keep in mind that this works best with NVENC, AV1, or similar encoders which do not actively take up GPU/CPU overhead. Using the replay buffer in this manner with a standard CPU encoder may have a large impact on performance. 
+
 
 ### **Example output logic with scene prefix and scene folder:**
 
