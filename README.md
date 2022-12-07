@@ -1,5 +1,5 @@
 # OBSPlay-Linux
-Linux-compatible fork/port of [OBSPlay](https://obsproject.com/forum/resources/obsplay-nvidia-shadowplay-alternative.1326/) by Kwozy.
+Linux-compatible fork/port of OBSPlay.
 
 
 Provides similar functionality to the naming scheme of Nvidia ShadowPlay. This automatically saves any files created by the built-in replay buffer under the name of their scene, followed by any optional conventions you've set in OBS. It also enables the creation of new folders (also named after the scene) for easier file sorting.
