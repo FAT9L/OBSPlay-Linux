@@ -38,7 +38,6 @@ The full file path would be something like `$HOME/Videos/OBS/example1/example1 2
 
 ## **Installation:**
 
-- `git clone https://github.com/FAT9L/OBSPlay-Linux.git`
 - Copy `OBSPlay-Linux.lua` to your plugins directory, most likely `/usr/share/obs/obs-plugins/frontend-tools/scripts`
 - Optional: use the `adv-ss-OBSPlay-integration.txt` config (OBS > Tools > Advanced Scene Switcher > Save/load settings > Import)
 - Test as needed
